@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport untuk responsivitas -->
+    <title>Pak Sopir - Jasa Transportasi Ambon Kobisonta PP</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS untuk styling responsif -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #4E7E5C; /* Warna dasar latar belakang */
+        }
+        .hero-bg {
+            background-image: 
+                linear-gradient(to bottom, rgba(78, 126, 92, 0.8), rgba(78, 126, 92, 0.9)),
+                url('https://placehold.co/1200x800/333333/FFFFFF?text=Armada+Pak+Sopir+(Innova+%26+Avanza)'); /* Placeholder untuk gambar mobil */
+            background-size: cover;
+            background-position: center;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1EAE50;
+        }
+        .icon-person {
+            width: 50px; 
+            height: 50px;
+            display: inline-block;
+            margin: 5px;
+        }
+        /* Styling untuk menu dropdown */
+        .dropdown-menu {
+            background-color: #3B6849; /* Warna sama dengan header */
+        }
+        .navbar-logo {
+            height: 180px; /* Sesuaikan tinggi logo */
+            margin-right: 10px; /* Jarak antara logo dan teks */
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <!-- Header -->
+    <header class="py-4 shadow-lg sticky top-0 z-50" style="background-color: #3B6849;">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo dan Nama Brand -->
+            <a href="#" class="flex items-center">
+                <img src="assets/logo.png" alt="[Logo Pak Sopir]" class="navbar-logo">
+                <h1 class="text-2xl sm:text-3xl font-bold hidden sm:block">Pak Sopir</h1>
+            </a>
+            
+            <!-- Tombol Hamburger untuk Mobile -->
+            <div class="sm:hidden">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navigasi untuk Desktop -->
+            <nav class="hidden sm:flex sm:space-x-1 md:space-x-3">
+                <a href="#layanan" class="text-lg hover:text-gray-300 py-2 sm:py-1 px-3 rounded-md hover:bg-white/10 transition-colors">Layanan</a>
+                <a href="#rute" class="text-lg hover:text-gray-300 py-2 sm:py-1 px-3 rounded-md hover:bg-white/10 transition-colors">Rute & Jadwal</a>
+                <a href="#kontak" class="text-lg hover:text-gray-300 py-2 sm:py-1 px-3 rounded-md hover:bg-white/10 transition-colors">Kontak</a>
+            </nav>
+        </div>
+        <!-- Menu Dropdown untuk Mobile -->
+        <div id="mobile-menu" class="sm:hidden hidden dropdown-menu absolute w-full shadow-lg">
+            <nav class="flex flex-col items-center py-3">
+                <a href="#layanan" class="text-lg hover:text-gray-300 py-2 px-3 rounded-md hover:bg-white/10 transition-colors w-full text-center block-link">Layanan</a>
+                <a href="#rute" class="text-lg hover:text-gray-300 py-2 px-3 rounded-md hover:bg-white/10 transition-colors w-full text-center block-link">Rute & Jadwal</a>
+                <a href="#kontak" class="text-lg hover:text-gray-300 py-2 px-3 rounded-md hover:bg-white/10 transition-colors w-full text-center block-link">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 md:py-32 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Perjalanan Nyaman & Aman <br>Ambon - Kobisonta PP</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Dengan armada Innova dan Avanza, Pak Sopir siap melayani perjalanan Anda dengan profesional.</p>
+            <div class="mb-8">
+                <svg class="icon-person inline-block" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M10 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h6V4zm2 16h6c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-6v16zm-4-6h2v2h-2v-2zm8-2h2v2h-2V8zm-4-2h2v2h-2V6zM7 6h2v2H7V6zm8 8h2v2h-2v-2zM12 2L8 5h8l-4-3zM4 20.5A1.5 1.5 0 005.5 22h13a1.5 1.5 0 001.5-1.5V19H4v1.5z"/></svg>
+                <svg class="icon-person inline-block" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm3-9h-2V9c0-.552-.447-1-1-1s-1 .448-1 1v2H9c-.553 0-1 .448-1 1s.447 1 1 1h2v2c0 .552.447 1 1 1s1-.448 1-1v-2h2c.553 0 1-.448 1-1s-.447-1-1-1z"/></svg>
+            </div>
+            <a href="#kontak" class="btn-whatsapp font-semibold py-3 px-8 rounded-lg text-lg inline-flex items-center">
+                <i class="fab fa-whatsapp mr-2"></i> Pesan Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-16 md:py-24 bg-opacity-50" style="background-color: #457253;">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">Layanan Kami</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card text-center">
+                    <i class="fas fa-car text-4xl mb-4 text-green-300"></i>
+                    <h4 class="text-2xl font-semibold mb-2">Antar Jemput Penumpang</h4>
+                    <p class="text-gray-200">Rute Ambon - Kobisonta dan Kobisonta - Ambon dengan armada Toyota Innova & Avanza. Kapasitas maksimal 6 penumpang.</p>
+                </div>
+                <div class="card text-center">
+                    <i class="fas fa-box-open text-4xl mb-4 text-green-300"></i>
+                    <h4 class="text-2xl font-semibold mb-2">Jasa Titip Paket</h4>
+                    <p class="text-gray-200">Menerima kiriman barang atau paket dengan aman dan terpercaya di sepanjang rute kami.</p>
+                </div>
+                <div class="card text-center lg:col-span-1 sm:col-span-2 sm:mx-auto lg:mx-0">
+                    <i class="fas fa-dollar-sign text-4xl mb-4 text-green-300"></i>
+                    <h4 class="text-2xl font-semibold mb-2">Tarif Terjangkau</h4>
+                    <p class="text-gray-200">Tarif Rp 500.000 per kursi. Harga bersaing dengan pelayanan prima.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rute & Jadwal Section -->
+    <section id="rute" class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12">Rute & Detail Perjalanan</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h4 class="text-2xl font-semibold mb-4">Kobisonta ke Ambon</h4>
+                    <ul class="space-y-2 text-gray-200">
+                        <li><i class="fas fa-map-marker-alt mr-2 text-green-300"></i><strong>Kobisonta ke Pelabuhan Waipirit:</strong> 330 km (±8 jam)</li>
+                        <li><i class="fas fa-coffee mr-2 text-green-300"></i><strong>Waktu Istirahat:</strong> ±1 jam (Rest area Gunung SS / Taman Manusela)</li>
+                        <li><i class="fas fa-ship mr-2 text-green-300"></i><strong>Penyeberangan Fery (Waipirit - Hunimua):</strong> ±2 jam</li>
+                        <li><i class="fas fa-road mr-2 text-green-300"></i><strong>Pelabuhan Hunimua Liang ke Kota Ambon:</strong> 35 km</li>
+                        <li><i class="fas fa-plane-departure mr-2 text-green-300"></i><strong>Tujuan Bandara Pattimura:</strong> Tambah 15 km (total 50 km dari Hunimua)</li>
+                        <li class="mt-4"><i class="fas fa-clock mr-2 text-green-300"></i><strong>Jadwal Keberangkatan:</strong></li>
+                        <li class="ml-6">- Umumnya malam hari, pukul 19:00 WIT.</li>
+                        <li class="ml-6">- Bisa request pagi hari (minimal 4 penumpang).</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4 class="text-2xl font-semibold mb-4">Ambon ke Kobisonta</h4>
+                     <ul class="space-y-2 text-gray-200">
+                        <li><i class="fas fa-map-marker-alt mr-2 text-green-300"></i><strong>Kota Ambon / Bandara Pattimura ke Pelabuhan Hunimua Liang</strong></li>
+                        <li><i class="fas fa-ship mr-2 text-green-300"></i><strong>Penyeberangan Fery (Hunimua - Waipirit):</strong> ±2 jam</li>
+                        <li><i class="fas fa-road mr-2 text-green-300"></i><strong>Pelabuhan Waipirit ke Kobisonta:</strong> 330 km (±8 jam + istirahat)</li>
+                        <li class="mt-4"><i class="fas fa-clock mr-2 text-green-300"></i><strong>Jadwal Keberangkatan:</strong></li>
+                        <li class="ml-6">- Pagi atau siang hari.</li>
+                        <li class="ml-6">- Tergantung jumlah penumpang (minimal 4 orang untuk berangkat).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card mt-8">
+                <h4 class="text-2xl font-semibold mb-4 text-center">Informasi Armada</h4>
+                <div class="flex flex-col md:flex-row justify-around items-center text-center gap-6 md:gap-4">
+                    <div class="w-full md:w-auto">
+                        <img src="assets/Innova.png" alt="[Gambar Toyota Innova]" class="rounded-lg shadow-md mx-auto mb-2 h-40 w-full max-w-xs sm:max-w-sm md:max-w-xs object-cover">
+                        <p class="text-lg font-medium">Toyota Innova</p>
+                    </div>
+                    <div class="w-full md:w-auto mt-6 md:mt-0">
+                        <img src="assets/avanza.png" alt="[Gambar Toyota Avanza]" class="rounded-lg shadow-md mx-auto mb-2 h-40 w-full max-w-xs sm:max-w-sm md:max-w-xs object-cover">
+                        <p class="text-lg font-medium">Toyota Avanza</p>
+                    </div>
+                </div>
+                <p class="text-center mt-4 text-gray-200">Kapasitas maksimal 6 penumpang: 1 di depan (samping sopir), 3 di tengah, dan 2 di belakang.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-16 md:py-24 bg-opacity-50" style="background-color: #457253;">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-6">Pesan Kursi atau Titip Paket Sekarang!</h3>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Jangan ragu untuk menghubungi kami. Pak Sopir siap melayani kebutuhan transportasi dan pengiriman barang Anda.</p>
+            <a href="https://wa.me/6281270559484?text=Halo%20Pak%20Sopir,%20saya%20mau%20pesan%20kursi/titip%20paket..." target="_blank" class="btn-whatsapp font-semibold py-3 px-6 sm:py-4 sm:px-10 rounded-lg text-lg sm:text-xl inline-flex items-center">
+                <i class="fab fa-whatsapp mr-2 sm:mr-3 fa-lg"></i> Hubungi via WhatsApp (0812-7055-9484)
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center" style="background-color: #3B6849;">
+        <div class="container mx-auto px-4">
+            <p class="text-gray-300">&copy; <span id="currentYear"></span> Pak Sopir - Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script untuk toggle menu dropdown
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = mobileMenu.querySelectorAll('.block-link'); // Ambil semua link di mobile menu
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Tambahkan event listener ke setiap link di mobile menu
+        // agar menu tertutup setelah link diklik (berguna untuk navigasi halaman tunggal)
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Script untuk tahun di footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
